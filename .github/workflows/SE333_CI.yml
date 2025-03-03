@@ -25,7 +25,7 @@ jobs:
         run: mvn validate checkstyle:checkstyle
 
       - name: Upload Checkstyle Result
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: checkstyle-result
           path: target/checkstyle-result.xml
@@ -34,7 +34,7 @@ jobs:
         run: mvn validate test
 
       - name: Jacoco Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
           path: target/site/jacoco/
