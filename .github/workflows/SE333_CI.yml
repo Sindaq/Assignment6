@@ -18,8 +18,8 @@ jobs:
           distribution: 'temurin'
           architecture: x64
 
-#      - name: Install Linter
-#        ##TODO
+      - name: Install Linter
+        run: mvn site
 
       - name: Run Checkstyle
         run: mvn validate checkstyle:checkstyle
