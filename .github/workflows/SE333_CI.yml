@@ -31,7 +31,7 @@ jobs:
           path: target/checkstyle-result.xml
 
       - name: Run Maven Test
-        uses: mvn test
+        run: mvn validate test
 
       - name: Jacoco Report
         uses: actions/upload-artifact@v3
