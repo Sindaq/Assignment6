@@ -18,6 +18,6 @@ _Combination Input_
 3. ISBN Length Not found | (Quantity > Book quantity | Quantity <= Book quantity)
 4. ISBN Length Found | (Quantity > Book quantity | Quantity <= Book quantity)
 
-## Structural-Based Testing
+### Structural-Based Testing
 100% coverage of BarnesAndNoble accomplished during specification-based testing
 

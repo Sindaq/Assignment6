@@ -18,17 +18,23 @@ jobs:
           distribution: 'temurin'
           architecture: x64
 
-      - name: Install Linter
-        ##TODO
+#      - name: Install Linter
+#        ##TODO
 
       - name: Run Checkstyle
-        ##TODO
+        run: mvn validate checkstyle:checkstyle
 
       - name: Upload Checkstyle Result
-        ##TODO
+        uses: actions/upload-artifact@v3
+        with:
+          name: checkstyle-result
+          path: target/checkstyle-result.xml
 
       - name: Run Maven Test
-        ##TODO
+        uses: mvn validate test
 
       - name: Jacoco Report
-        ##TODO
+        uses: actions/upload-artifact@v3
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/index.html
