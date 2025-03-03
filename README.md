@@ -1,4 +1,8 @@
 # Assignment6
+[Final GitHub actions workflow](https://github.com/Sindaq/Assignment6/actions/runs/13622546526/job/38074373458)\
+Github actions successfully executed and passed all tests, disabled\
+test that found a bug. Workflow generated checkstyle-result.xml and\
+jacoco coverage report.
 ## Part 1.
 ### Specification-Based Testing
 **Single Input:**\
